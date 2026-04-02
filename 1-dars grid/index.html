@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>JOnibek shopping</title>
+</head>
+
+<body>
+    <section class="shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-3 order-1 order-lg-1 d-flex align-items-center">
+                    <div class="shop__logo">
+                        <h1><i><span>Shop</span>per</i></h1>
+                    </div>
+                    <!-- /.shop__menu -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xxl-4 col-xl-4 col-lg-3 col-12 d-flex order-3 order-lg-2">
+                    <div class="shop__inp d-flex justify-content-end">
+                        <input type="text" placeholder="Search Items ">
+                        <div class="shop__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <!-- /.shop__menu -->
+                    <!-- /.shop__search -->
+                    <div class="shop__bars">
+                        <div class="bars">
+                            <div class="bars__title">
+                                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasWithBothOptions"
+                                    aria-controls="offcanvasWithBothOptions"></i>
+                                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bars
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul>
+                                            <li><a href="">Features </a></li>
+                                            <li><a href="">Products</a></li>
+                                            <li><a href="">Blog</a></li>
+                                            <li><a href="">About</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.bars__title -->
+                        </div>
+                        <!-- /.bars -->
+                    </div>
+                    <!-- /.shop__bars -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-9 order-2 order-lg-3 d-flex justify-content-end">
+                    <div class="shop__btn">
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-suitcase"></i>0 Items Added
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input type="text" placeholder="E-mail">
+                                        <input type="text" placeholder="Password">
+                                        <b>Sign Up Bro ...?</b>
+                                        <button type="button" class="btn btn-green">Log-in</button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <b>Don't have an account? Sign Up</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-green" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-regular fa-user"></i> Login or Sign Up
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.shop__menu -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+    </section>
+    <!-- /.shop -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__menu d-flex justify-content-center align-items-center">
+                        <ul class="m-0 p-0">
+                            <li><a href="">Features </a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.header__title -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <!-- /.header -->
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="products__title">
+                        <h1>Discover Our <br> Latest Products</h1>
+                        <p>Lorem ipsum is a placeholder text commonly used <br> to demonstrate the visual form of a
+                            product
+                        </p>
+                    </div>
+                    <!-- /.products__title -->
+                    <div class="products__btn">
+                        <button class="btn btn-green">Buy now</button>
+                    </div>
+                    <!-- /.products__btn -->
+                    <div class="products__well">
+                        <img src="img/Ellipse 9.png" alt="" class="img-1">
+                        <img src="img/Ellipse 7.png" alt="" class="img-2">
+                        <img src="img/Ellipse 7.png" alt="" class="img-3">
+                        <img src="img/Ellipse 9.png" alt="" class="img-4">
+                        <p>15k Well Reviews</p>
+                    </div>
+                    <!-- /.products__well -->
+                    <div class="products__video">
+                        <img src="img/Mask group (1).png" alt="">
+                        <p>Play Video</p>
+                    </div>
+                    <!-- /.products__video -->
+                </div>
+                <!-- /.col -->
+                <div class="col-12 col-md-6">
+                    <div class="products__text">
+                        <div class="products__img2">
+                            <img src="img/Star 1 (1).png" alt="">
+                        </div>
+                        <!-- /.products__img1 -->
+                        <h2>Red Beats MI9c2zm/a</h2>
+                        <img src="img/image 6.png" alt="">
+                        <h4>$50<h4>
+                                <div class="products__img1">
+                                    <img src="img/Star 1 (1).png" alt="">
+                                </div>
+                                <!-- /.products__img1 -->
+                    </div>
+                    <!-- /.products__text -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.products -->
+    <section class="apple">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="box">
+                        <div class="box__title">
+                            <h1>Apple wireless Airpod</h1>
+                        </div>
+                        <!-- /.box__title -->
+                    </div>
+                    <div class="apple__img">
+                        <img src="img/Rectangle 17.png" alt="">
+                        <img src="img/Rectangle 16.png" alt="">
+                        <img src="img/Rectangle 15.png" alt="">
+                    </div>
+                    <!-- /.apple__img -->
+                </div>
+                <!-- /.col -->
+                <div class="col-12 col-md-6">
+                    <div class="apple__title">
+                        <h1>Our Featured Products</h1>
+                        <p>Lorem ipsum is a placeholder text commonly <br> used to demonstrate the visual form of a <br>
+                            product</p>
+                        <div class="apple__btn">
+                            <button class="btn btn-green">Add to cart</button>
+                            <p>View more</p>
+                        </div>
+                        <!-- /.apple__btn -->
+                    </div>
+                    <!-- /.apple__title -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.apple -->
+    <section class="picks">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="picks__title justify-content-center align-items-center">
+                            <h1>Top Sellers</h1>
+                        </div>
+                        <!-- /.picks__title -->
+                        <div class="picks__title justify-content-center align-items-center">
+                            <button class="btn btn-green">Top Picks</button>
+                            <h3>Watches</h3>
+
+                        </div>
+                        <!-- /.picks__title -->
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                    <div class="card card-orange">
+                        <div class="card__img">
+                            <img src="img/image 12 (1).png" alt="">
+                        </div>
+                        <!-- /.card__img -->
+                        <div class="card__title">
+                            <h4>Boat kerz 333</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$20</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card card-blue">
+                        <div class="card__img">
+                            <img src="img/image 13 (1).png" alt="">
+                        </div>
+                        <div class="card__title">
+                            <h4>Boat kerz 234</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$40</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card card-pink">
+                        <div class="card__img">
+                            <img src="img/image 14 (2).png" alt="">
+                        </div>
+                        <div class="card__title">
+                            <h4>Boat kerz 323</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$30</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.picks -->
+    <section class="trending">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="picks__title justify-content-center align-items-center">
+                            <h1>Top Sellers</h1>
+                        </div>
+                        <!-- /.picks__title -->
+                        <div class="picks__title justify-content-center align-items-center">
+                            <button class="btn btn-green">Trending Earphones</button>
+                            <h3>Watches</h3>
+                        </div>
+                        <!-- /.picks__title -->
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4 ">
+                    <div class="card card-purple">
+                        <div class="card__img">
+                            <img src="img/image 15 (1).png" alt="">
+                        </div>
+                        <!-- /.card__img -->
+                        <div class="card__title">
+                            <h4>Boat kerz 333</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$20</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card card-azure">
+                        <div class="card__img">
+                            <img src="img/image 13 (1).png" alt="">
+                        </div>
+                        <div class="card__title">
+                            <h4>Boat kerz 234</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$40</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card card-aqua">
+                        <div class="card__img">
+                            <img src="img/image 16 (1).png" alt="">
+                        </div>
+                        <div class="card__title">
+                            <h4>Boat kerz 323</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            75 Reviews
+                            <p>$30</p>
+                        </div>
+                        <!-- /.card__title -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="card__btn">
+                        <button class="btn btn-card">Add to cart</button>
+                    </div>
+                    <!-- /.card__btn -->
+                </div>
+                <!-- /.col-md-4 -->
+
+
+
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box__title">
+                            <h1>New Launches</h1>
+                        </div>
+                        <!-- /.box__title -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.picks -->
+    <section class="launches">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="launches__img">
+                        <img src="img/Mask group (4).png" alt="">
+                        <img src="img/Mask group (5).png" alt="">
+                    </div>
+                    <!-- /.launches__img -->
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <div class="launches__title">
+                        <h1>Airdrop 500 Anc</h1>
+                        <p>Lorem ipsum is a placeholder text commonly used to <br> demonstrate the visual form of a
+                            product
+                            ... Read More</p>
+                        <h3>Price : <span>$45 .99</span></h3>
+                    </div>
+                    <!-- /.launches__title -->
+                    <div class="colorlar">
+                        <div class="color color-black">
+                            <h6></h6>
+                        </div>
+                        <!-- /.color -->
+                        <div class="color color-yellow">
+                            <h6></h6>
+                        </div>
+                        <!-- /.color -->
+                        <div class="color color-blue">
+                            <h6></h6>
+                        </div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.colorlar -->
+                    <div class="launches__btn">
+                        <button class="btn btn-green">Add to cart</button>
+                        <h5>Explore More</h5>
+                    </div>
+                    <!-- /.launches__btn -->
+                </div>
+                <!-- /.col_md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.launches -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer__home">
+                        <h3>Ready to get started?</h3>
+                        <button class="btn btn-green">Get started</button>
+                    </div>
+                    <!-- /.tooter__home -->
+                </div>
+                <!-- /.col -->
+                <br><br><br><br>
+                <hr>
+                <div class="col-md-3">
+                    <div class="footer__menu">
+                        <h5>Subscribe to our Website</h5><br><br>
+                        <p>Email adress</p>
+                        <hr>
+                        <br><br>
+                    </div>
+                    <!-- /.footer__menu -->
+                </div>
+                <!-- /.col-md-12 -->
+                <div class="col-md-3">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Email Marketing</a></li>
+                            <li><a href="">Campaigns</a></li>
+                            <li><a href="">Branding</a></li>
+                            <li><a href="">Offline</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.footer__menu -->
+                </div>
+                <!-- /.col-md-12 -->
+                <div class="col-md-3">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Our Story</a></li>
+                            <li><a href="">Benefits</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.footer__menu -->
+                </div>
+                <!-- /.col-md-12 -->
+                <div class="col-md-3">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.footer__menu -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="col-md-12">
+                <div class="footer__icon">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <!-- /.footer__icon -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
